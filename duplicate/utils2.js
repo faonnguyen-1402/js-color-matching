@@ -1,7 +1,7 @@
 import { getPlayAgainButton, getTimerElement } from './selectors2.js'
 
 function shuffle(arr) {
-    if (Array.isArray(arr) || arr.length <= 2) return arr
+    if (!Array.isArray(arr) || arr.length <= 2) return arr
     for (let i = arr.length - 1; i > 1; i--) {
         const j = Math.floor(Math.random() * i)
 
@@ -20,7 +20,7 @@ export const getRandomColorPairs = (count) => {
     const hueList = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink', 'monochrome']
     for (let i = 0; i < count; i++) {
         const color = window.randomColor({
-            luminosity: 'dark',
+            luminosity: 'bright',
             hue: hueList[i % hueList.length],
         })
         colorList.push(color)
