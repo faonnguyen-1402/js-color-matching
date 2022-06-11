@@ -104,7 +104,7 @@
 }
 
 .color-list>li:hover {
-    background-image: linear-gradient(red, yellow)
+    background-color: #ddd;
     /* background-color: red */
 }
 
