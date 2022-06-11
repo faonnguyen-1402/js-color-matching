@@ -20,7 +20,7 @@ let dataForBackground
 let gameStatus = GAME_STATUS.PLAYING
 let count = 0
 let timer = createTimer({
-    seconds: 30,
+    seconds: 45,
     onChange: handleTimerChange,
     onFinish: handleTimerFinish,
 })
